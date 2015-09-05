@@ -10,7 +10,9 @@ var templates = {
     marketMapViewTemplate:"views/marketMapViewTemplate.html",
     marketsNearMeViewTemplate:"views/marketsNearMeViewTemplate.html",
     deliverResultsViewTemplate:"views/deliverResultsViewTemplate.html",
+    deliverViewTemplate:"views/deliverViewTemplate.html",
     reserveResultsViewTemplate:"views/reserveResultsViewTemplate.html",
+    reserveViewTemplate:"views/reserveViewTemplate.html",
     searchResultsViewTemplate:"views/searchResultsViewTemplate.html",
     searchViewTemplate:"views/searchViewTemplate.html",
     loaded: 0,
@@ -134,8 +136,8 @@ ViewAssembler.prototype.marketDetailsView = function( market ) {
 }
 
 ViewAssembler.prototype.reserveView = function () {
-    var el = $( templates.reserveResultsViewTemplate );
-    var $state = el.find( "#search_state" );
+    var el = $( templates.reserveViewTemplate );
+    var $state = el.find( "#search_state");
     
     var states = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Puerto Rico","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virgin Islands","Virginia","Washington","West Virginia","Wisconsin","Wyoming"];
     for ( var i in states ) {
@@ -147,8 +149,8 @@ ViewAssembler.prototype.reserveView = function () {
 }
 
 ViewAssembler.prototype.deliverView = function () {
-    var el = $( templates.deliverResultsViewTemplate );
-    var $state = el.find( "#search_state" );
+    var el = $( templates.deliverViewTemplate );
+    var $state = el.find( "#search_state");
     
     var states = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Puerto Rico","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virgin Islands","Virginia","Washington","West Virginia","Wisconsin","Wyoming"];
     for ( var i in states ) {
