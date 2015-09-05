@@ -9,6 +9,8 @@ var templates = {
     marketDetailsViewTemplate:"views/marketDetailsViewTemplate.html",
     marketMapViewTemplate:"views/marketMapViewTemplate.html",
     marketsNearMeViewTemplate:"views/marketsNearMeViewTemplate.html",
+    deliverResultsViewTemplate:"views/deliverResultsViewTemplate.html",
+    reserveResultsViewTemplate:"views/reserveResultsViewTemplate.html",
     searchResultsViewTemplate:"views/searchResultsViewTemplate.html",
     searchViewTemplate:"views/searchViewTemplate.html",
     loaded: 0,
@@ -72,7 +74,9 @@ ViewAssembler.prototype.loginView = function() {
 
 ViewAssembler.prototype.defaultView = function() {
     var el = $( templates.defaultViewTemplate );
-    el.find("#nearMe").on( this.CLICK_EVENT, onNearbyViewClick );
+    el.find("#Reserve").on( this.CLICK_EVENT, onReserveViewClick );
+    el.find("#Deliver").on( this.CLICK_EVENT, onDeliverViewClick );
+    el.find("#pickUp").on( this.CLICK_EVENT, onNearbyViewClick );
     el.find("#search").on( this.CLICK_EVENT, onSearchViewClick );
     el.find("#about").on( this.CLICK_EVENT, onAboutViewClick );
     return el;
@@ -127,6 +131,32 @@ ViewAssembler.prototype.nearbyMarketsView = function( latitude, longitude, marke
 ViewAssembler.prototype.marketDetailsView = function( market ) {
     var template = templates.marketDetailsViewTemplate;
     return $( Mustache.to_html(template, market) );
+}
+
+ViewAssembler.prototype.reserveView = function () {
+    var el = $( templates.reserveResultsViewTemplate );
+    var $state = el.find( "#search_state" );
+    
+    var states = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Puerto Rico","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virgin Islands","Virginia","Washington","West Virginia","Wisconsin","Wyoming"];
+    for ( var i in states ) {
+        $state.append($("<option></option>").text(states[i])); 
+    }
+    
+    el.find( "#searchButton" ).on( this.CLICK_EVENT, onSearchButtonClick );
+    return el;
+}
+
+ViewAssembler.prototype.deliverView = function () {
+    var el = $( templates.deliverResultsViewTemplate );
+    var $state = el.find( "#search_state" );
+    
+    var states = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Puerto Rico","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virgin Islands","Virginia","Washington","West Virginia","Wisconsin","Wyoming"];
+    for ( var i in states ) {
+        $state.append($("<option></option>").text(states[i])); 
+    }
+    
+    el.find( "#searchButton" ).on( this.CLICK_EVENT, onSearchButtonClick );
+    return el;
 }
 
 ViewAssembler.prototype.searchView = function () {

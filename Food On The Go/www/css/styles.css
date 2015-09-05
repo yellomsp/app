@@ -78,7 +78,7 @@ body {
 	border-top:1px solid #fff;
 	border-bottom:1px solid #CCC;
 	
-    background-image:url('img/more_disclosure.png');
+    background-image:url('/img/more_disclosure.png');
     background-position:right center;
     background-repeat:no-repeat;
 }
@@ -115,7 +115,7 @@ body {
     border:1px solid #999;
     padding:0px;
     border-radius:0px;
-    background-image:url('img/back_arrow.png');
+    background-image:url('/img/back_arrow.png');
     background-position: 3px center;
     background-repeat:no-repeat;
 }
@@ -201,7 +201,7 @@ body {
 }
 
 #defaultView {
-    background-image:url('img/wheat_bg_nocolor.png');
+    background-image:url('/img/wheat_bg_nocolor.png');
     background-position: bottom center;
     background-repeat:no-repeat;
 }
@@ -254,7 +254,7 @@ body {
 
 #defaultView #nearMe {
     padding-left:75px;
-    background-image:url('img/map_marker.png');
+    background-image:url('/img/map_marker.png');
     background-position: 15px center;
     background-repeat:no-repeat;
 }
@@ -279,15 +279,14 @@ body {
 
 #defaultView #search {
     padding-left:75px;
-    background-image:url('img/search.png');
+    background-image:url('/img/search.png');
     background-position: 5px center;
     background-repeat:no-repeat;
 }
 
 #defaultView #about {
     padding-left:75px;
-    background-image:url('img/info.png');
-    background-position: 10px center;
+/    background-position: 10px center;
     background-repeat:no-repeat;
 }
 
@@ -355,102 +354,102 @@ body {
 }
 
 #credit_cards {
-    background-image:url('img/credit_card.png');
+    background-image:url('/img/credit_card.png');
     background-position: 10px center;
 }
 
 #wic_accepted {
-    background-image:url('img/family.png');
+    background-image:url('/img/family.png');
     background-position: 15px center;
 }
 
 #senior {
-    background-image:url('img/senior.png');
+    background-image:url('/img/senior.png');
     background-position: 24px center;
 }
 
 #snap {
-    background-image:url('img/snap.png');
+    background-image:url('/img/snap.png');
     background-position: 20px center;
 }
 
 #bakedgoods {
-    background-image:url('img/bread.png');
+    background-image:url('/img/bread.png');
     background-position: 10px center;
 }
 
 #cheese {
-    background-image:url('img/cheese.png');
+    background-image:url('/img/cheese.png');
     background-position: 7px center;
 }
 
 #arts {
-    background-image:url('img/arts.png');
+    background-image:url('/img/arts.png');
     background-position: 12px center;
 }
 
 #flowers {
-    background-image:url('img/flower.png');
+    background-image:url('/img/flower.png');
     background-position: 15px center;
 }
 
 #seafood {
-    background-image:url('img/fish.png');
+    background-image:url('/img/fish.png');
     background-position: 7px center;
 }
 
 #fruit {
-    background-image:url('img/fruit.png');
+    background-image:url('/img/fruit.png');
     background-position: 15px center;
 }
 
 #herbs {
-    background-image:url('img/herb.png');
+    background-image:url('/img/herb.png');
     background-position: 15px center;
 }
 
 #vegetables {
-    background-image:url('img/vegetables.png');
+    background-image:url('/img/vegetables.png');
     background-position: 16px center;
 }
 
 #honey {
-    background-image:url('img/honey.png');
+    background-image:url('/img/honey.png');
     background-position: 17px center;
 }
 
 #jams {
-    background-image:url('img/jams.png');
+    background-image:url('/img/jams.png');
     background-position: 17px center;
 }
 
 #maple {
-    background-image:url('img/maple.png');
+    background-image:url('/img/maple.png');
     background-position: 17px center;
 }
 
 #nuts {
-    background-image:url('img/nuts.png');
+    background-image:url('/img/nuts.png');
     background-position: 15px center;
 }
 
 #meat {
-    background-image:url('img/meat.png');
+    background-image:url('/img/meat.png');
     background-position: 10px center;
 }
 
 #plants {
-    background-image:url('img/plants.png');
+    background-image:url('/img/plants.png');
     background-position: 18px center;
 }
 
 #prepared {
-    background-image:url('img/prepared.png');
+    background-image:url('/img/prepared.png');
     background-position: 15px center;
 }
 
 #soap {
-    background-image:url('img/soap.png');
+    background-image:url('/img/soap.png');
     background-position: 10px center;
 }
 

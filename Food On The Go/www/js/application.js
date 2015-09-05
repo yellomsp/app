@@ -98,6 +98,27 @@ function onAboutViewClick( event ) {
     return false;
 }
 
+function onReserveViewClick( event ) {
+    var view = { title: "List",
+             backLabel: (isTablet() ? "Back" : " "),
+             view: viewAssembler.reserveView(),
+           };
+    window.viewNavigator.pushView( view );
+    event.stopPropagation();
+    return false;
+}
+
+function onDeliverViewClick( event ) {
+    var view = { title: "List",
+             backLabel: (isTablet() ? "Back" : " "),
+             view: viewAssembler.deliverView(),
+           };
+    window.viewNavigator.pushView( view );
+    event.stopPropagation();
+    return false;
+}
+
+
 function onSearchViewClick( event ) {
     var view = { title: "List",
              backLabel: (isTablet() ? "Back" : " "),
