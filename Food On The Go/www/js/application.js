@@ -12,23 +12,33 @@ var markets = [];
 var viewAssembler = new ViewAssembler();
 
 $(document).ready( function(){
-    loadTemplates( setupDefaultView );
+    loadTemplates( setupLoginView );
 } );
 
-function setupDefaultView() { 
+function setupLoginView() { 
     
-    var bodyView = viewAssembler.defaultView(); 
+    var bodyView = viewAssembler.loginView(); 
     
     //Setup the default view
-    var defaultView = { title: "Welcome!", 
+    var loginView = { title: "Welcome!", 
     view:  bodyView,
     };
     
     //Setup the ViewNavigator
     window.viewNavigator = new ViewNavigator( 'body' );	
-    window.viewNavigator.pushView( defaultView );
+    window.viewNavigator.pushView( loginView );
     
-	$.getScript("data.js", scriptSuccess);
+	//$.getScript("data.js", scriptSuccess);
+}
+
+function onLoginViewClick( event ) {
+    var view = { title: "Home",
+             backLabel: (isTablet() ? "Back" : " "),
+             view: viewAssembler.defaultView()
+           };
+    window.viewNavigator.pushView( view );
+    event.stopPropagation();
+    return false;
 }
 
 function onMapButtonClick( event ) {

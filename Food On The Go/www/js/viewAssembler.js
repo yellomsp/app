@@ -1,6 +1,7 @@
 
 var templates = {
     aboutViewTemplate:"views/aboutViewTemplate.html",
+    loginViewTemplate:"views/loginViewTemplate.html",
     defaultViewTemplate:"views/defaultViewTemplate.html",
     findMarketsNearMeViewTemplate:"views/findMarketsNearMeViewTemplate.html",
     geoPermissionDeniedViewTemplate:"views/geoPermissionDeniedViewTemplate.html",
@@ -61,6 +62,12 @@ function ViewAssembler() {
     //this.CLICK_EVENT = this.touchSupported ? 'touchend' : 'click';
     this.CLICK_EVENT = 'click';
     return this;
+}
+
+ViewAssembler.prototype.loginView = function() {
+    var el = $( templates.loginViewTemplate );
+    el.find("#login").on( this.CLICK_EVENT, onLoginViewClick );
+    return el;
 }
 
 ViewAssembler.prototype.defaultView = function() {
