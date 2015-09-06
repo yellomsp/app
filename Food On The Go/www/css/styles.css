@@ -29,7 +29,22 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
 }
 
-
+#loginView1{
+	background-image: url("graphics/backimg.jpg");
+	position: fixed; 
+	top: 0; 
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+ }
+ #defaultView1{
+	background-image: url("graphics/backimg.jpg");
+	position: fixed; 
+	top: 0; 
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+ }
 
 .subtext {
     font-size:0.85em;
@@ -115,7 +130,7 @@ body {
     border:1px solid #999;
     padding:0px;
     border-radius:0px;
-    background-image:url('/img/back_arrow.png');
+    background-image:url('graphics/back_arrow.png');
     background-position: 3px center;
     background-repeat:no-repeat;
 }
@@ -201,7 +216,7 @@ body {
 }
 
 #defaultView {
-    background-image:url('/img/wheat_bg_nocolor.png');
+    background-image:url('/css/graphics/backimg.png');
     background-position: bottom center;
     background-repeat:no-repeat;
 }

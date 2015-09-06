@@ -99,7 +99,7 @@ function onAboutViewClick( event ) {
 }
 
 function onReserveViewClick( event ) {
-    var view = { title: "List",
+    var view = { title: "Select",
              backLabel: (isTablet() ? "Back" : " "),
              view: viewAssembler.reserveView(),
            };
