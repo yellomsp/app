@@ -20,7 +20,7 @@ function setupLoginView() {
     var bodyView = viewAssembler.loginView(); 
     
     //Setup the default view
-    var loginView = { title: "Welcome!", 
+    var loginView = { title: "Food On The Go!", 
     view:  bodyView,
     };
     
