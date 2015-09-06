@@ -18,17 +18,15 @@ $(document).ready( function(){
 function setupLoginView() { 
     
     var bodyView = viewAssembler.loginView(); 
-    
-    //Setup the default view
+
     var loginView = { title: "Food On The Go!", 
     view:  bodyView,
     };
-    
-    //Setup the ViewNavigator
+
     window.viewNavigator = new ViewNavigator( 'body' );	
     window.viewNavigator.pushView( loginView );
     
-	//$.getScript("data.js", scriptSuccess);
+	$.getScript("data.js", scriptSuccess);
 }
 
 function onLoginViewClick( event ) {

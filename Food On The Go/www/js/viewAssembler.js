@@ -136,7 +136,7 @@ ViewAssembler.prototype.reserveView = function () {
     var el = $( templates.reserveViewTemplate );
     var $state = el.find( "#search_state");
     
-    var states = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Puerto Rico","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virgin Islands","Virginia","Washington","West Virginia","Wisconsin","Wyoming"];
+    var states = ["A C Guards","A S Roa Nagar","Abids Road","Adarsh Nagar","Adikmet","Afzalgunj","Agapura","Ahmed Nagar","Akbar Road","Alexander Road","Aliabad","Alwal","Amberpet","Ameerpet","Ameerpet X Road","Anand Bagh","Anand Nagar Colony","Ashok Nagar","Asif Nagar","Attapur","Attapur Ring Road","Auto Nagar","Azamabad","Azampura Masjid","Baber Bagh","Bachpally","Badichowdi","Bagh Amberpet","Bagh Lingampally","Bahadurpura","Bahadurpurpally","Bairamalguda","Bakaram","Bala Nagar","Balapur","Balkampet","Bandimet","Bandlaguda","Banjara Hills","Bank Street","Bansilal Pet","Bansilalpet","Bapuji Nagar","Barkas","Barkatpura","Basheerbagh","Bazarghat","Begum Bazar","Bhagya Nagar Colony","Bharat Nagar","Bhel","Bholakpur","Bk Guda","Bod Uppal","Boggulakunta","Bolaram","Borabanda","Boudha Nagar"];
     for ( var i in states ) {
         $state.append($("<option></option>").text(states[i])); 
     }
@@ -149,7 +149,7 @@ ViewAssembler.prototype.searchView = function () {
     var el = $( templates.searchViewTemplate );
     var $state = el.find( "#search_state" );
     
-    var states = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Puerto Rico","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virgin Islands","Virginia","Washington","West Virginia","Wisconsin","Wyoming"];
+    var states = ["A C Guards","A S Roa Nagar","Abids Road","Adarsh Nagar","Adikmet","Afzalgunj","Agapura","Ahmed Nagar","Akbar Road","Alexander Road","Aliabad","Alwal","Amberpet","Ameerpet","Ameerpet X Road","Anand Bagh","Anand Nagar Colony","Ashok Nagar","Asif Nagar","Attapur","Attapur Ring Road","Auto Nagar","Azamabad","Azampura Masjid","Baber Bagh","Bachpally","Badichowdi","Bagh Amberpet","Bagh Lingampally","Bahadurpura","Bahadurpurpally","Bairamalguda","Bakaram","Bala Nagar","Balapur","Balkampet","Bandimet","Bandlaguda","Banjara Hills","Bank Street","Bansilal Pet","Bansilalpet","Bapuji Nagar","Barkas","Barkatpura","Basheerbagh","Bazarghat","Begum Bazar","Bhagya Nagar Colony","Bharat Nagar","Bhel","Bholakpur","Bk Guda","Bod Uppal","Boggulakunta","Bolaram","Borabanda","Boudha Nagar"];
     for ( var i in states ) {
         $state.append($("<option></option>").text(states[i])); 
     }

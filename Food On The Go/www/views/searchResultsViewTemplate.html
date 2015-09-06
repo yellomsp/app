@@ -11,11 +11,8 @@
     <ul>
         {{#markets}}
         <li index="{{index}}">
-            <strong>{{marketName}}</strong><br/>
-            {{#street}}
-            {{street}}<br/>
-            {{/street}}
-            {{city}}, {{state}}, {{zip}}
+            <strong>{{marketName}}</strong>
+            {{distance}}
         </li>
         {{/markets}}
     </ul>
