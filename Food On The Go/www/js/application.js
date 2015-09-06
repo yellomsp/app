@@ -71,11 +71,11 @@ function onSearchResultMapButtonClick( event ) {
         }
     }
     //console.log( centerPoint.x, centerPoint.y );
-    centerPoint.x = centerPoint.x / len;
-    centerPoint.y = centerPoint.y / len;
+    centerPoint.x = 17.5;//centerPoint.x / len;
+    centerPoint.y = 78.4;//centerPoint.y / len;
     
     //console.log( centerPoint.x, centerPoint.y );
-    centerPoint = new L.LatLng(centerPoint.y, centerPoint.x);
+    centerPoint = new L.LatLng(centerPoint.x, centerPoint.y);
 
     var view = { title: "Map",
              backLabel: (isTablet() ? "Back" : " "),
@@ -91,7 +91,7 @@ function onSearchResultMapButtonClick( event ) {
 function onAboutViewClick( event ) {
     var view = { title: "About",
              backLabel: (isTablet() ? "Back" : " "),
-             view: viewAssembler.aboutView()
+             view: viewAssembler.aboutView(),
            };
     window.viewNavigator.pushView( view );
     event.stopPropagation();
@@ -102,16 +102,6 @@ function onReserveViewClick( event ) {
     var view = { title: "List",
              backLabel: (isTablet() ? "Back" : " "),
              view: viewAssembler.reserveView(),
-           };
-    window.viewNavigator.pushView( view );
-    event.stopPropagation();
-    return false;
-}
-
-function onDeliverViewClick( event ) {
-    var view = { title: "List",
-             backLabel: (isTablet() ? "Back" : " "),
-             view: viewAssembler.deliverView(),
            };
     window.viewNavigator.pushView( view );
     event.stopPropagation();
@@ -132,7 +122,7 @@ function onSearchViewClick( event ) {
 function onNearbyViewClick( event ) {
 
     var view = { title: "Nearby",
-             view: viewAssembler.findNearbyView()
+             view: viewAssembler.findNearbyView(),
            };
     window.viewNavigator.pushView( view );
     
